@@ -1,0 +1,19 @@
+<mjml>
+  <mj-head>
+    <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" />
+    <mj-font name="Panton" href="styles/panton-fonts.css" />
+  </mj-head>
+  <mj-body>
+    <mj-hero mode="fluid-height" background-color="#E5ECFF" padding="24px 0px">
+      <mj-image src="assets/images/logo.png" width="56px" height="56px" alt="logo" padding="0" />
+      <mj-text align="center" font-family="'Roboto', sans-serif" font-size="16px" line-height="26px" font-weight="400" color="#2F2F2F">
+        <span style="font-family: 'Panton', sans-serif; font-size: 24px; line-height: 32px; padding: 0; margin: 0">{{ coupon_title }}</span>
+        </br>{{ coupon_subtitle }}
+      </mj-text>
+      <mj-text align="center" font-family="'Roboto', sans-serif" color="#0045FF" padding="12px 25px">
+        <span style="font-size: 24px; line-height: 26px; font-weight: 400; padding: 0; margin: 0">{{coupon_number}}</span>
+      </mj-text>
+      <mj-button href="https://qa-b2c-foundation.hrt.cloud/produkte" font-family="'Roboto', sans-serif" background-color="#0045FF" color="#FFFFFF" font-size="16px" font-weight="500" padding="8px 25px" inner-padding="11px 43.5px">{{ coupon_btn-txt }}</mj-button>
+    </mj-hero>
+  </mj-body>
+</mjml>

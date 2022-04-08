@@ -1,0 +1,20 @@
+{
+  "data": {
+    "title": "Premium Lady Pants",
+    "article_id": "12345678",
+    "quantity": "1",
+    "price": "1,00 €",
+    "list": [
+      { "title": "Subtotal", "price": "€9,00" },
+      { "title": "Shipping", "price": "€0,00" },
+      { "title": "VAT", "price": "€1,25" }
+    ],
+    "total_price": "€10,25",
+    "total_txt": "Total",
+    "article_txt": "Articles",
+    "price_txt": "Price",
+    "artice_id_txt": "ArticleID",
+    "quantity_txt": "Quantity"
+  },
+  "template": "products-list"
+}

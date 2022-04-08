@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Panton';
+  font-style: normal;
+  font-weight: 300;
+  src: url('assets/fonts/PantonNarrowW05-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Panton';
+  font-style: normal;
+  font-weight: 300;
+  src: url('assets/fonts/PantonNarrowW05-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Panton';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/PantonNarrowW05-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Panton';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/PantonNarrowW05-Regular.woff2') format('woff2');
+}

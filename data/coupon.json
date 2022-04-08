@@ -1,0 +1,9 @@
+{
+  "data": {
+    "coupon_title": "Your coupon code",
+    "coupon_subtitle": "Use this coupon code at checkout.",
+    "coupon_btn-txt": "Shop for products",
+    "coupon_number": "3H-FJSK-849h"
+  },
+  "template": "coupon"
+}

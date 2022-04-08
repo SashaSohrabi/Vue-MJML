@@ -1,0 +1,69 @@
+<mjml>
+  <mj-head>
+    <mj-style> 
+      @media screen and (min-width: 481px) { 
+        .wrapper div { display: none !important; } 
+        .wrapper { vertical-align: middle !important } 
+        .articles-table th { width: 20% !important; }
+        .wrapper td { width: 20% !important; vertical-align: middle !important }
+        .txt-center { text-align: center !important; }
+      } 
+
+      @media screen and (max-width: 481px) {
+        .articles-table th:nth-child(3) { display: none !important; }
+        .articles-table th:nth-child(4) { display: none !important; }
+        .wrapper td:nth-child(3) { display: none !important; }
+        .wrapper td:nth-child(4) { display: none !important; }
+      }
+    </mj-style>
+    <mj-style inline="inline"> .blue-text div { display: none !important; } .wrapper div { line-height: 16px !important; } } </mj-style>
+  </mj-head>
+  <mj-body css-class="body">
+    <mj-section background-color="#FFFFFF" padding="32px 0">
+      <mj-column>
+        <mj-table padding="0 24px" font-family="Arial, Helvetica, sans-serif" css-class="articles-table">
+          <tr style="background-color: #e5ecff; font-size: 14px; line-height: 22px">
+            <th style="text-align: left; width: 20%; padding: 12px; padding-right: 0">{{ article_txt }}</th>
+            <th style="width: 55%; padding: 12px;"></th>
+            <th style="padding: 12px">{{ artice_id_txt }}</th>
+            <th style="padding: 12px">{{ quantity_txt }}</th>
+            <th style="text-align: right; width: 25%; padding: 12px">{{ price_txt }}</th>
+          </tr>
+          <tr style="border-bottom: 1px solid #dddddd" v-for="n in 3" class="wrapper">
+            <td style="padding: 14px 0"><img src="https://raw.githubusercontent.com/SashaSohrabi/Hartmann-email-html-table/master/assets/images/item.png" width="64" height="64" /></td>
+            <td style="padding: 14px 6px" valign="top">
+              <span style="font-size: 16px; line-height: 26px; font-weight: 400">{{ title }}</span>
+              <div>
+                <br />
+                <span style="font-size: 12px; line-height: 16px"><b>{{ artice_id_txt }}</b></span
+                >&#xA0;&#xA0;<span>{{ article_id }}</span><br />
+                <span style="font-size: 12px; line-height: 16px"><b>{{ quantity_txt }}</b></span
+                >&#xA0;&#xA0;<span>{{ quantity }}</span>
+              </div>
+            </td>
+            <td style="text-align: center">{{ article_id }}</td>
+            <td style="text-align: center">{{ quantity }}</td>
+            <td style="text-align: right; padding: 14px 12px; font-size: 16px; line-height: 26px; font-weight: 400" valign="top">{{ price }}</td>
+          </tr>
+        </mj-table>
+        <mj-table padding="16px 20px 30px" font-family="Arial, Helvetica, sans-serif">
+          <tr>
+            <th style="width: 20%"></th>
+            <th stle="width: 40%; "></th>
+            <th style="width: 40%"></th>
+          </tr>
+          <tr v-for="(item, index) in list">
+            <td style="padding: 4px 0"></td>
+            <td style="padding: 4px 6px; font-size: 16px; line-height: 26px; font-weight: 400">{{ item.title }}</td>
+            <td style="text-align: right; padding: 4px 12px; font-size: 16px; line-height: 26px; font-weight: 400">{{ item.price }}</td>
+          </tr>
+          <tr>
+            <td style="padding: 4px 0"></td>
+            <td style="padding: 4px 6px; font-size: 16px; line-height: 26px; font-weight: 400"><b>{{ total_txt }}</b></td>
+            <td style="text-align: right; padding: 4px 12px; font-size: 24px; line-height: 26px; font-weight: 400">{{ total_price }}</td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
